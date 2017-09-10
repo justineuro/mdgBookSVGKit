@@ -22,7 +22,7 @@ To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was gen
 ## Important Parameters
 To personalize one's generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following: 
 
-- `mdgBookSVGv1.tex` - (main latex file) see lines 35-45; also, one may have to occassionally change the \\topmargin and \\textheight values in line 267 and 268 to ensure the the audio MIDI files will be on the same page as the score
+- `mdgBookSVGv1.tex` - (main latex file) see lines 35-45; also, one may have to occassionally change the \\topmargin and \\textheight values in lines 267 and 268 to ensure that each audio MIDI file will be on the same page as corresponding musical score
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVG1.tex` for default values
 
 ## Related Sites
