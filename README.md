@@ -27,7 +27,7 @@ To personalize one's generated book (in addition to the randomly generated minue
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVGv1.tex` for default values
 - `hyperref.cfg` - contains the `\\hypersetup` keyvalues; one may wish to chnage the default value of `pdfauthor`, among other keyvalues; see the documentation for the TeX package `hyperref` for more information on the keyvalues.
 
-Once the desired changes have been made to the files above, one can then re-compile the book by issuing the last set of commmands in the HOWTO file:
+Once the desired changes have been made to the files above, one can then re-compile the book by issuing, in the `res` subdirectoy, the last set of commmands in the HOWTO file:
 ```shell
 pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
 bibtex mdgBookSVGv1.aux
