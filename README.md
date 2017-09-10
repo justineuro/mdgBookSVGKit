@@ -21,10 +21,19 @@ To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was gen
 (**Note**: To enable the MIDI audio links in the book, one should download [mdgBookSVG_1-midi.zip](./mdgBookSVG_1-midi.zip) and unzip in the same directory in one's computer that contains the book, i.e., the book and midi files have to be in the same directory).
 
 ## Important Parameters
-To personalize one's generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following: 
+To personalize one's generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following (all three files are initially found in the main directory but are eventually moved into the `res` folder): 
 
 - `mdgBookSVGv1.tex` - (main latex file) see lines 35-45; also, one may have to occassionally change the \\topmargin and \\textheight values in lines 267 and 268, to ensure that each audio MIDI file will be on the same page as the corresponding musical score
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVGv1.tex` for default values
+- `hyperref.cfg` - contains the `\\hypersetup` keyvalues; one may wish to chnage the default value of `pdfauthor`, among other keyvalues; see the documentation for the TeX package `hyperref` for more information on the keyvalues.
+
+Once the desired changes have been made to the files above, one can then re-compile the book by issuing the last set of commmands in the HOWTO file:
+```shell
+pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
+bibtex mdgBookSVGv1.aux
+pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
+pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
+```
 
 ## Related Sites
 - [Mozart](https://marian-aldenhoevel.de/mozart/) - A site maintained by Marian Aldenh&ouml;vel allows the visitor to generate a MDG (user-specified or randomly-generated) and the corresponding audio (<tt> midi</tt>, <tt>wav</tt>) and image files (<tt>pdf</tt>, <tt>png</tt>) based on *Musikalisches W&uuml;rferspiel, K. 516f*.
