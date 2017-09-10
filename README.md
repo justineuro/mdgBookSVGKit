@@ -4,14 +4,14 @@
 
 This folder contains materials that allow the user to author a book containing a collection of [Musical Dice Games (MDG)](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) minuets, generated based on the rules given in  [*Musikalisches Würfelspiel, K.516f* (Mozart, Wolfgang Amadeus)](http://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)).
 
-To creat a book, simply [download](https://github.com/justineuro/mdgBookSVGKit/archive/master.zip) (or [clone](`git clone https://github.com/justineuro/mdgBookSVGKit.git`) this project) to one's computer, unzip the downloaded archive, and at the command line inside the main folder (`mdgBookSVGKit-master` directory) issue the following command:
+To creat a book, simply [download](https://github.com/justineuro/mdgBookSVGKit/archive/master.zip) (or [clone](`git clone https://github.com/justineuro/mdgBookSVGKit.git`) this project) to one's computer, unzip the downloaded archive, and at the command line inside the main folder (`mdgBookSVGKit-master` directory) issue the following command (pre-requisites: `BASH`, `ABCMIDI`, `ABCM2PS`, `Ghostscript`, `Inkscape`, and `LaTeX`):
 
 ```shell
 bash HOWTO
 ```
 
-Wait for a **few** minutes, i.e., until one gets the bash prompt again.  The compiled book in PDF format (`mdgBookSVGv1.pdf`), among other things, should be located in the `res` folder (subdirectory).<br/>
-(Pre-requisites: `BASH`, `ABCMIDI`, `ABCM2PS`, `Ghostscript`, `Inkscape`, and `LaTeX`.)  
+Wait for a **few** minutes, i.e., until one gets the bash prompt again.  The compiled book in PDF format (`mdgBookSVGv1.pdf`), among other things, should be located in the `res` folder (subdirectory).
+  
 
 ## For the Impatient
 To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was generated in a similar manner, simply right-click (then "Save Link As ...") on the following image:
