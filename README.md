@@ -4,7 +4,7 @@
 
 This folder contains materials that allow the user to author a book containing a collection of [Musical Dice Games (MDG)](https://en.wikipedia.org/wiki/Musikalisches_W%C3%BCrfelspiel) minuets, generated based on the rules given in  [*Musikalisches Würfelspiel, K.516f* (Mozart, Wolfgang Amadeus)](http://imslp.org/wiki/Musikalisches_W%C3%BCrfelspiel,_K.516f_(Mozart,_Wolfgang_Amadeus)).
 
-To creat a book, simply [download](https://github.com/justineuro/mdgBookSVGKit/archive/master.zip) (or [clone](git clone https://github.com/justineuro/mdgBookSVGKit.git) this project) to ones computer, unzip the downloaded archive, and at the command line inside the main folder (`mdgBookSVGKit-master` directory) issue the following command:
+To creat a book, simply [download](https://github.com/justineuro/mdgBookSVGKit/archive/master.zip) (or [clone](`git clone https://github.com/justineuro/mdgBookSVGKit.git`) this project) to one's computer, unzip the downloaded archive, and at the command line inside the main folder (`mdgBookSVGKit-master` directory) issue the following command:
 
 ```shell
 bash HOWTO
@@ -17,10 +17,10 @@ To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was gen
 
 [![Front Cover](./mdgBookSVGv1-tit-125.jpg)](./mdgBookSVGv1_1.pdf)
 
-(**Note**: To enable the MIDI audio links in the book, one should download [mdgBookSVG_1-midi.zip](./mdgBookSVG_1-midi.zip) and unzip in the same directory in ones computer that contains the book, i.e., the book and midi files have to be in the same directory).
+(**Note**: To enable the MIDI audio links in the book, one should download [mdgBookSVG_1-midi.zip](./mdgBookSVG_1-midi.zip) and unzip in the same directory in one's computer that contains the book, i.e., the book and midi files have to be in the same directory).
 
 ## Important Parameters
-To personalize ones generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following: 
+To personalize one's generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following: 
 
 - `mdgBookSVGv1.tex` - (main latex file) see lines 35-45; also, one may have to occassionally change the \\topmargin and \\textheight values in line 267 and 268 to ensure the the audio MIDI files will be on the same page as the score
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVG1.tex` for default values
