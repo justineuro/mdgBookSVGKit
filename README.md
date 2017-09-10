@@ -25,7 +25,7 @@ To personalize one's generated book (in addition to the randomly generated minue
 
 - `mdgBookSVGv1.tex` - (main latex file) see lines 35-45; also, one may have to occassionally change the \\topmargin and \\textheight values in lines 267 and 268, to ensure that each audio MIDI file will be on the same page as the corresponding musical score
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVGv1.tex` for default values
-- `hyperref.cfg` - contains the `\\hypersetup` keyvalues; one may wish to chnage the default value of `pdfauthor`, among other keyvalues; see the documentation for the TeX package `hyperref` for more information on the keyvalues.
+- `hyperref.cfg` - contains the `\hypersetup` keyvalues; one may wish to change the default value of `pdfauthor`, among other keyvalues; see the documentation for the TeX package `hyperref` for more information on these keyvalues.
 
 Once the desired changes have been made to the files above, one can then re-compile the book by issuing, in the `res` subdirectoy, the last set of commmands in the HOWTO file:
 ```shell
