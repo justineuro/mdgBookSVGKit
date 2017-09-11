@@ -27,6 +27,8 @@ To personalize one's generated book (in addition to the randomly generated minue
 - `mdgBookSVGv1-cover.tex`- makes the cover of the book; see lines 35-45 of `mdgBookSVGv1.tex` for default values
 - `hyperref.cfg` - contains the `\hypersetup` keyvalues; one may wish to change the default value of `pdfauthor`, among other keyvalues; see the documentation for the TeX package `hyperref` for more information on these keyvalues.
 
+Also, line 32 of the `HOWTO` is set by default so that each new book created contains 250 minuets.  One may wish to change this number, as desired, to some other counting number.
+
 Once the desired changes have been made to the files above, one can then re-compile the book by issuing, in the `res` subdirectoy, the last set of commmands in the HOWTO file:
 ```shell
 pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex

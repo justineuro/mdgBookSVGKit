@@ -1,5 +1,9 @@
 #!/bin/bash
-# Create work folder (e.g., `mdgBookSVG_1`) and three sub-folders: `bin`, `images`, `res`
+# The `bash HOWTO` command given at the command line within the `mdgBookSVGKit-master` directory
+# in your computer will automatically carry out the following steps leading to the creation of the 
+# collection book: `mdgBookSVGv1.pdf`.
+# 
+# Create three sub-folders: `bin`, `images`, `res`, under the `mdgBookSVG-master` directory
 #	`bin` - folder for Bash files: mdg2mid-svg.sh, mdg2minRndN-svg.sh, entriesSVG.sh
 #	`images` - folder for image files for book cover/title page: 1.png, FrontCover.pdf
 # 	`res` - folder for ABC, SVG, PDF output files; initially contains: 
@@ -82,4 +86,4 @@
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
 	bibtex mdgBookSVGv1.aux
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
-	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
+	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex///////
