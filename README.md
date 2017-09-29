@@ -16,9 +16,9 @@ Wait for a **few** minutes, i.e., until one gets the bash prompt again.  The com
 ## For the Impatient
 To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was generated in a similar manner, simply right-click (then "Save Link As ...") on the following image:
 
-[![Front Cover](./mdgBookSVGv1-tit-125.jpg)](https://github.com/justineuro/mdgBookSVGKit/raw/master/mdgBookSVGv1_1.pdf)
+[![Front Cover](./mdgBookSVGv1-tit-125.jpg)](https://justineuro.github.io/mdgBookSVGKit/mdgBookSVGv1_1.pdf)
 
-(**Note**: To enable the MIDI audio links in the book, one should download [mdgBookSVG_1-midi.zip](./mdgBookSVG_1-midi.zip) and unzip in the same directory in one's computer that contains the book, i.e., the book and midi files have to be in the same directory).
+(**Note**: To enable the MIDI audio links in the book, one should download [mdgBookSVG_1-midi.zip](https://justineuro.github.io/mdgBookSVGKit/mdgBookSVG_1-midi.zip) and unzip in the same directory in one's computer that contains the book, i.e., the book and midi files have to be in the same directory).
 
 ## Important Parameters
 To personalize one's generated book (in addition to the randomly generated minuets), one may want to change some of the default parameters/values in the following (all three files are initially found in the main directory but are eventually moved into the `res` folder): 
