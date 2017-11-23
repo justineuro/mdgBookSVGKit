@@ -23,8 +23,13 @@
 #----------------------------------------------------------------------------------
 # define the function genS() that randomly chooses an integer from 2 to 12, inclusive
 #----------------------------------------------------------------------------------
-genS() { # $RANDOM randomly generates an integer from 0 to 32767
-	echo `expr $[$RANDOM + 1] % 11 + 2`
+genS() { # RANDOM randomly generates an integer from 0 to 32767
+	rnd=32768
+	until [ $rnd -lt 32758 ]
+	do
+		rnd=$[RANDOM]
+		if [ $rnd -lt 32758 ]; then echo $[rnd%11+2]; fi
+	done
 }
 
 #----------------------------------------------------------------------------------
