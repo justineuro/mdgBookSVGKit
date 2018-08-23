@@ -86,4 +86,4 @@
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
 	bibtex mdgBookSVGv1.aux
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
-	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex///////
+	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
