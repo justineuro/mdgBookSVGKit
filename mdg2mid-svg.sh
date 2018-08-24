@@ -128,7 +128,8 @@ Q:1/8=111
 %%staves [1 2]
 V:1 clef=treble
 V:2 clef=bass
-K:C"
+K:C
+%%MIDI program 01 %bright acoustic piano 02"
 
 #----------------------------------------------------------------------------------
 # write the notes of the ABC file
