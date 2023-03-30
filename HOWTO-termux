@@ -73,7 +73,7 @@
 ##	- line 54: add escapes ("\") before "%" (2x) and "_" (5x); and \url{---}for URL
 
 	sed -i.OLD '/http/s/_/\\_/g' abcmdg-k516f001.pdf_tex
-	sed -i.OLD '/http:\/\/imslp/s/%/\\%/g' abcmdg-k516f001.pdf_tex
+#	sed -i.OLD '/http:\/\/imslp/s/%/\\%/g' abcmdg-k516f001.pdf_tex	#not needed for termux
 	sed -i.OLD 's/Source: http/Source: \\url{http/g' abcmdg-k516f001.pdf_tex
 	sed -i.OLD 's/Amadeus)\]/Amadeus)}\]/g' abcmdg-k516f001.pdf_tex
 
