@@ -12,8 +12,6 @@ bash HOWTO
 
 Wait for a **few** minutes, i.e., until one gets the bash prompt again.  The compiled book in PDF format (`mdgBookSVGv1.pdf`), among other things, should be located in the `res` folder (subdirectory).  
 
-(In Termux, use `bash HOWTO-termux` instead).
-
 ## For the Impatient
 To download and examine an example of a book (`mdgBookSVGv1_1.pdf`) that was generated in a similar manner, simply right-click (then "Save Link As ...") on the following image:
 
