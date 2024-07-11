@@ -15,10 +15,10 @@
 #		by his publisher, Nikolaus Simrock).
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0.1
+#     VERSION:	1.0.2
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2017.08.12 19:24:34 +8
-#    REVISION:	2017.08.30 12:10:25 +8
+#    REVISION:	2024/07/11 11:27:02
 #==================================================================================
 
 #----------------------------------------------------------------------------------
@@ -57,7 +57,6 @@ ruletab() {
 # declare variables "notesG" and "notesF" as arrays
 # notesG - array that contains the possible treble clef notes per measure
 # notesF - array that contains the possible bass clef notes per measure
-# measPerm - array that contains the measures corresponding to the dice toss outcomes
 #----------------------------------------------------------------------------------
 declare -a notesG notesF
 
@@ -128,8 +127,7 @@ Q:1/8=111
 %%staves [1 2]
 V:1 clef=treble
 V:2 clef=bass
-K:C
-%%MIDI program 01 %bright acoustic piano 02"
+K:C"
 
 #----------------------------------------------------------------------------------
 # write the notes of the ABC file
