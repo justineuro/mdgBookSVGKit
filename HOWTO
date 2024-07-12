@@ -6,7 +6,7 @@
 # Create three sub-folders: `bin`, `images`, `res`, under the `mdgBookSVG-master` directory
 #	`bin` - folder for Bash files: mdg2mid-svg.sh, mdg2minRndN-svg.sh, entriesSVG.sh
 #	`images` - folder for image files for book cover/title page: 1.png, FrontCover.pdf
-# 	`res` - folder for ABC, SVG, PDF output files; initially contains: 
+# `res` - folder for ABC, SVG, PDF output files; initially contains: 
 #		12TAB.pdf - crosstable for two-dice outcome vs. measure number of minuet 
 #		abcmdg-k516f.abc - table of measures 
 #		hyperref.cfg - file containing the \hypersetup{} keyvalues for the \hyperref pkg
@@ -60,10 +60,10 @@
 # Create the abcmdg-k516f.pdf (table of measures) SVGs; aslo *pdf_tex files using inkscape
 
 	abcm2ps -v -O= abcmdg-k516f.abc
-	inkscape -D -z --file=abcmdg-k516f001.svg --export-pdf=abcmdg-k516f001.pdf --export-latex
-	inkscape -D -z --file=abcmdg-k516f002.svg --export-pdf=abcmdg-k516f002.pdf --export-latex
-	inkscape -D -z --file=abcmdg-k516f003.svg --export-pdf=abcmdg-k516f003.pdf --export-latex
-	inkscape -D -z --file=abcmdg-k516f004.svg --export-pdf=abcmdg-k516f004.pdf --export-latex
+	inkscape --export-filename=abcmdg-k516f001.pdf --export-area-drawing --export-latex abcmdg-k516f001.svg
+	inkscape --export-filename=abcmdg-k516f002.pdf --export-area-drawing --export-latex abcmdg-k516f002.svg
+	inkscape --export-filename=abcmdg-k516f003.pdf --export-area-drawing --export-latex abcmdg-k516f003.svg
+	inkscape --export-filename=abcmdg-k516f004.pdf --export-area-drawing --export-latex abcmdg-k516f004.svg
 
 # Edit lines 53, 54 of abcmdg-k516f001.pdf_tex:
 ##	- line 53: change ü (umlaut u) to \"{u} in Würferspiel
@@ -76,9 +76,11 @@
 	sed -i.OLD 's/Source: http/Source: \\url{http/g' abcmdg-k516f001.pdf_tex
 	sed -i.OLD 's/Amadeus)\]/Amadeus)}\]/g' abcmdg-k516f001.pdf_tex
 
-##	- add "\scriptsize" before every "tr" and "3-plet" (symbol for trill ornament)  
+##	- add "\scriptsize" before every "tr" and "1./2." (symbol for trill ornament)  
 
 	sed -i.OLD 's/\\textit{tr}/\\textit{\\footnotesize tr}/g' abcmdg-*.pdf_tex 
+	sed -i.OLD 's/tabular}\[t\]{l}1\./tabular}\[t\]{l}\\footnotesize 1\./g' abcmdg-*.pdf_tex 
+	sed -i.OLD 's/tabular}\[t\]{l}2\./tabular}\[t\]{l}\\footnotesize 2\./g' abcmdg-*.pdf_tex 
 	sed -i.OLD 's/\[t\]{l}\\textit{/\[t\]{c}\\texttt{\\footnotesize /g' abcmdg-*.pdf_tex
 
 # Generate the PDF
@@ -87,3 +89,7 @@
 	bibtex mdgBookSVGv1.aux
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
 	pdflatex -synctex=1 -interaction=nonstopmode -shell-escape mdgBookSVGv1.tex
+
+###
+##
+#
