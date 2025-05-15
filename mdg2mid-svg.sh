@@ -15,10 +15,10 @@
 #		by his publisher, Nikolaus Simrock).
 #
 #      AUTHOR:	J.L.A. Uro (justineuro@gmail.com)
-#     VERSION:	1.0.2
+#     VERSION:	1.0.3
 #     LICENSE:	Creative Commons Attribution 4.0 International License (CC-BY)
 #     CREATED:	2017.08.12 19:24:34 +8
-#    REVISION:	2024/07/11 11:27:02
+#    REVISION:	2025/05/15 11:12:47
 #==================================================================================
 
 #----------------------------------------------------------------------------------
